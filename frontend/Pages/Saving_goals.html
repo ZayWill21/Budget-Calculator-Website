@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aving goals </title>
+    <meta name="description" content="Collect input from a User requesting for their total budget and total saving goals.
+    This website will help organize the Users fiances and saving goals.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Boilerplate">
+    <meta name="author" content="Isaiah William, Tavis Yearwood, Evelin Ruiz-Moya, Jonathan Caques, Michael Dalto">
+    <link rel="stylesheet" href="/frontend/stylesheets/styles.css">
+    <link rel="stylesheet" href="/frontend/stylesheets/mediaqueries.css" />
+    <script src="/frontend/scripts/script.js"></script>
+</head>
+
+<section id="NAV">
+    <nav id="desktop-nav">
+        <div class="logo"><a href="/frontend/Pages/main.html"></a>Chedderchase</div>
+        <div class="nav-items">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="/frontend/Pages/Saving_goals.html">Saving goals</a></li>
+                <li><a href="#Substriptions">Substriptions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+    <div class="logo"><a href="/frontend/Pages/main.html"></a>Chedderchase</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="/frontend/Pages/Saving_goals.html" onclick="toggleMenu()">Saving goals</a></li>
+                <li><a href="#Substriptions" onclick="toggleMenu()">Substriptions</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+</section>
+
+<section>
+    <body>
+        <div class="container">
+            <h1 class="logo">Enter Your Saving Goals</h1>
+            <form id="goalForm">
+                <label for="goalName">Goal Name:</label>
+                <input type="text" id="goalName" required>
+                <label for="goalAmount">Amount ($):</label>
+                <input type="number" id="goalAmount" required>
+                <button class="btn" type="submit">Add Goal</button>
+            </form>
+
+            <canvas id="goalsChart"></canvas>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+    </body>
+</section>
+
+    <footer id="footer1">
+        <p>&copy; 2024 Group 31. All rights reserved.</p>
+    </footer>

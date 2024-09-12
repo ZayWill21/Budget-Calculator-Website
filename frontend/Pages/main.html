@@ -10,26 +10,59 @@
     This website will help organize the Users fiances and saving goals.">
     <meta name="keywords" content="HTML, CSS, JavaScript, Boilerplate">
     <meta name="author" content="Isaiah William, Tavis Yearwood, Evelin Ruiz-Moya, Jonathan Caques, Michael Dalto">
-    <link rel="stylesheet" href="/frontend/stylesheets/styles.css"> 
+    <link rel="stylesheet" href="/frontend/stylesheets/styles.css">
+    <link rel="stylesheet" href="/frontend/stylesheets/mediaqueries.css" />
+    <script src="/frontend/scripts/script.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Welcome to the Budget Calultor Website</h1>
     </header>
 
     <main>
-        <section>
-            <h2>Introduction</h2>
-            <p>This is a basic HTML boilerplate to get us started.</p>
+        <section id="NAV">
+            <nav id="desktop-nav">
+
+                <div class="logo">Chedderchase</div>
+                <div class="nav-items">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="/frontend/Pages/Saving_goals.html">Saving goals</a></li>
+                        <li><a href="#Substriptions">Substriptions</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav id="hamburger-nav">
+                <div class="logo">Chedderchase</div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                        <li><a href="/frontend/Pages/Saving_goals.html" onclick="toggleMenu()">Saving goals</a></li>
+                        <li><a href="#Substriptions" onclick="toggleMenu()">Substriptions</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    </div>
+                </div>
+            </nav>
+
+        </section>
+        <section id="Front-Page">
+            <div class="image-section">
+                    <button class="btn btn-color-2"><a href="/frontend/Pages/Saving_goals.html"></a>Saving Goals</button>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer id="footer1">
         <p>&copy; 2024 Group 31. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script> 
+    <script src="/frontend/scripts/script.js"></script>
 </body>
 
 </html>
