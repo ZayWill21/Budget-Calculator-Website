@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheddarChase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CHEDDARCHASE</h1>
+        </div>
+    </header>
+    <div class="container">
+        <h1>My Subscriptions</h1>
+        <h2>Enter your monthly subscriptions below and track how much you're spending!</h2>
+    </div>
+    <div class="container">
+        <table>
+        <thead>
+            <tr>
+                <th>Subscription Name</th>
+                <th>Cost</th>
+                <th>Due Date</th>
+                <th>Billing Cycle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="subscriptionName1" placeholder="e.g., Netflix"></td>
+                <td><input type="number" name="cost1" placeholder="e.g., 9.99" step="0.01"></td>
+                <td><input type="date" name="date1" placeholder="e.g., 10/2"></td>
+                <td>    
+                        <select name="billingCycle1">
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="subscriptionName2" placeholder="e.g., Spotify"></td>
+                <td><input type="number" name="cost2" placeholder="e.g., 4.99" step="0.01"></td>
+                <td><input type="date" name="date1" placeholder="e.g., 10/2"></td>
+                <td>
+                    <select name="billingCycle2">
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+     </table>
+     <button type="button" onclick="addRow()">+ Add More Subscriptions</button>
+    </div>
+    <div>
+         <h2>Subscriptions List</h2>
+    <table id="displayTable">
+        <thead>
+            <tr>
+                <th>Subscription Name</th>
+                <th>Cost</th>
+                <th>Next Due Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Netflix</td>
+                <td>$9.99</td>
+                <td>2024-10-01</td>
+            </tr>
+            <tr>
+                <td>Spotify</td>
+                <td>$4.99</td>
+                <td>2024-09-15</td>
+            </tr>
+            <tr>
+                <td>Disney+</td>
+                <td>$7.99</td>
+                <td>2024-11-05</td>
+            </tr>
 
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>
