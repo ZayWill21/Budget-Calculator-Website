@@ -74,3 +74,17 @@ button:hover {
 .forgot-password:hover {
     text-decoration: underline;
 }
+
+.login {
+    font-size: 12px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login:hover{
+    text-decoration: underline;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
