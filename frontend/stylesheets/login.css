@@ -76,6 +76,7 @@ button:hover {
 }
 
 .login {
+    margin-top: 10px;
     font-size: 12px;
     color: #007bff;
     text-decoration: none;
@@ -85,6 +86,13 @@ button:hover {
     text-decoration: underline;
 }
 
-.forgot-password:hover {
+.sign_up {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sign_up:hover {
     text-decoration: underline;
 }
